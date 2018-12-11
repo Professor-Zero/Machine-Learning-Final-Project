@@ -1,0 +1,3 @@
+250365
+start_date end_date duration peak sum average median
+No drought periods found.

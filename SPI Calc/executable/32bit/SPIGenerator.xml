@@ -1,0 +1,58 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SPIGenerator
+</name>
+</assembly>
+<members>
+<member name="T:NationalDroughtMitigationCenter.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:NationalDroughtMitigationCenter.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:NationalDroughtMitigationCenter.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:NationalDroughtMitigationCenter.ExceptionManager.HandleApplicationException(System.Object,System.Threading.ThreadExceptionEventArgs)">
+ <summary>
+ 
+ Catches ThreadExceptionEventArgs and passes them to the general application exception handler.
+ It is hooked in Main.
+ 
+ </summary>
+ <param name="sender" type="object">not used.</param>
+ <param name="t" type="ThreadExceptionEventArgs">the exception thrown.</param>
+</member>
+<member name="M:NationalDroughtMitigationCenter.ExceptionManager.HandleApplicationException(System.Object,System.Exception)">
+ <summary>
+ 
+ This method is the event handler for any unhandled exceptions in the application.
+ If it catches any, it will log the exception to the event log.  It will then forecably exit.
+ It is hooked in Main.
+ 
+ </summary>
+ <param name="sender" type="object">not used.</param>
+ <param name="ex" type="Exception">the exception thrown.</param>
+</member>
+<member name="M:NationalDroughtMitigationCenter.ExceptionManager.ExtractExceptionInfo(System.Exception,System.String)">
+ <summary>
+ 
+ This method builds an error string with application, machine, process,
+ and exception information based on the exception read in.  
+ 
+ </summary>
+ <param name="ex" type="Exception">The exception to gather information from.</param>
+ <param name="filePath" type="string">Path of the file being parsed.</param>
+ <returns type="string">A string with application, machine, process, and exception information.</returns>
+</member>
+</members>
+</doc>
